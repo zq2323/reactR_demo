@@ -1,6 +1,6 @@
 ## reactR
 
-this is the examples of creating the component based the package `reactR`.
+Include the examples of creating the component based the package `reactR`.
 you can find the source on the https://unleash-shiny.rinterface.com/going-further-reactr
 
 Note: when bulding the JS file with `yarn run webpack`, if an error return, we can try to 
