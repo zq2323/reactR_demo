@@ -1,0 +1,43 @@
+---
+title: "reactR"
+output: html_document
+date: "2023-05-31"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# install.packages('reactR')
+
+reactR::scaffoldReactShinyInput(
+  "action_button", 
+  list(
+    "reactstrap" = "^8.9.0"
+  )
+)
+
+###############################
+#I get an error when yarn run webpack
+
+# How to solve the error:0308010C:digital envelope routines::unsupported
+# https://www.datainfinities.com/49/error-0308010C-digital-envelope-routines-unsupported
+
+#---- run the first, then run yarn run webpack
+#---- set NODE_OPTIONS=--openssl-legacy-provider
+#---- yarn run webpack
+
+
+
+
+# reactR::scaffoldReactShinyInput("button_group")
+
+# reactR::scaffoldReactShinyInput("items_container")
+# 
+# 修改srcjs下 items_container.jsx,  main..jsx
+# 
+# set NODE_OPTIONS=--openssl-legacy-provider
+# 
+# yarn run webpack
+# 
+# devtools::load_all()

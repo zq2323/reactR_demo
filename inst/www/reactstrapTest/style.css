@@ -1,0 +1,46 @@
+li {
+  cursor: pointer;
+  padding: 10px;
+}
+
+li.selected {
+  background-color: lightblue;
+}
+
+li:hover {
+  background-color: lightgray;
+}
+
+.buttons {
+  margin: 10px 0;
+}
+
+.button {
+  margin-right: 10px;
+}
+
+.container {
+  display: flex;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.left {
+  flex: 1;
+  border-right: 1px solid #ccc;
+  padding-right: 10px;
+}
+
+.center {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10px;
+}
+
+.right {
+  flex: 1;
+  border-left: 1px solid #ccc;
+  padding-left: 10px;
+}
