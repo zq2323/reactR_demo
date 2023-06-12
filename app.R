@@ -15,12 +15,20 @@ ui <- fluidPage(
     "plop",
     "A group of buttons",
     choices = names(mtcars)
-  )
+  ),
+
+  editableInput('table1', "text"),
+  verbatimTextOutput("bar")
 )
 
 server <- function(input, output, session) {
 
   observe(print(input$plop))
+
+  output$bar <- renderPrint({
+    cat("Table 1: ", input$table1)
+  })
+
 }
 
 shinyApp(ui, server)
